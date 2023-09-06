@@ -1,0 +1,103 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    nav h1 {
+        text-align: center;
+        font-size: 25px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .container {
+        text-align: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .container label {
+        margin-left: 40px;
+        margin-top: 30px;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+
+    select {
+        background-color: rgb(248, 248, 248);
+        padding: 5px;
+        color: rgb(85, 186, 245);
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid rgb(85, 186, 245);
+        cursor: pointer;
+    }
+
+    .container button {
+        /* border: 2px solid red; */
+        background-color: rgb(85, 186, 245);
+        padding: 5px 10px;
+        color: white;
+        margin-top: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+
+    #convertbtn {
+        background-color: rgb(85, 186, 245);
+        padding: 5px;
+        color: white;
+        margin-left: 10px;
+        margin-right: 2%;
+        margin-top: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .codepart {
+        display: flex;
+        height: 800px;
+    }
+
+    #Output {
+        width: 50%;
+        padding: 20px;
+    }
+
+
+    /* ================================ */
+
+    #codearea {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #171616;
+    }
+
+    .code-editor {
+        width: 80%;
+    }
+
+    #outputCode {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        white-space: pre;
+        font-family: 'Courier New', monospace;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 800px) {
+        .codepart {
+            flex-direction: column;
+        }
+    }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <h1>AI Code Convertor</h1>
+    </nav>
+
+    <hr>
+    <div class="container">
+        <label for="code"> code :</label>
+        <select name="language" id="language">
+            <option value="JavaScript">JavaScript</option>
+            <option value="java">java</option>
+            <option value="python">python</option>
+            <option value="c++">c++</option>
+            <option value="c">c</option>
+            <option value="c#">c#</option>
+            <option value="php">php</option>
+        </select>
+        <label for="code"> Convert To :</label>
+        <select name="code" id="code">            
+            <option value="java">java</option>
+            <option value="python">python</option>
+            <option value="c++">c++</option>
+            <option value="c">c</option>
+            <option value="c#">c#</option>
+            <option value="php">php</option>
+        </select>
+        <button id="convertbtn">Convert</button>
+
+        <button id="debug">Debug</button>
+        <button id="runbtn">Run</button>
+
+
+
+
+    </div>
+
+    <div class="codepart">
+        <div id="codearea">
+            <!-- --------------------- User Code ---------------------  -->
+
+        </div>
+
+        <div id="output">
+            <!-- --------------------- Output --------------------- -->
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.27.0/min/vs/loader.js"></script>
+    
+</body>
+
+</html>
+<script src="./index.js"></script>
