@@ -5,6 +5,7 @@ const debugbtn = document.getElementById("debug")
 const codearea = document.getElementById("codearea")
 const outputarea = document.getElementById("output")
 const codeLang = document.getElementById("code")
+// const url = "https://code-editor-smrk.onrender.com"
 const url = "https://ai-code-editor.onrender.com"
 const languagearea = document.getElementById("language")
 
@@ -34,7 +35,7 @@ require(['vs/editor/editor.main'], function () {
 
     // ------------------------------------ Convert Btn ------------------------------------
   convertbtn.addEventListener("click", () => {
-    outputarea.innerHTML = ``
+    outputarea.innerHTML = `<h2>Loading...</h2>`
     const subject = {
       code: editor.getValue() || "javascript",
       language: codeLang.value
@@ -73,7 +74,7 @@ require(['vs/editor/editor.main'], function () {
 
   //------------------------------------  Debug Btn ------------------------------------
   debugbtn.addEventListener("click", () => {
-
+    outputarea.innerHTML = `<h2>Loading...</h2>`
     const subject = {
       code: editor.getValue(),
       language: languagearea.value || "javascript"
@@ -113,7 +114,7 @@ require(['vs/editor/editor.main'], function () {
 
   //------------------------------------ Run Btn ------------------------------------
   runbtn.addEventListener("click", () => {
-
+    outputarea.innerHTML = `<h2>Loading...</h2>`
     const subject = {
       code: editor.getValue(),
       language: languagearea.value || "javascript"
