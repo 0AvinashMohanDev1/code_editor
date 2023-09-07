@@ -93,7 +93,6 @@
         white-space: pre;
         font-family: 'Courier New', monospace;
         padding: 10px;
-        box-sizing: border-box;
     }
 
     @media screen and (max-width: 800px) {

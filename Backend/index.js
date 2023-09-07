@@ -95,7 +95,9 @@ app.post("/run", async (req, res) => {
 });
 
 
-
+app.get("/",(req,res)=>{
+    res.send("working fine")
+})
 
 app.listen(port, () => {
     try {
